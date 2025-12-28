@@ -103,7 +103,7 @@ void initParkingLot(ParkingLot *p, int rows, int cols){
     }
 }
 
-/* Find nearest available slot (row-major) */
+/* Find nearest available slot (row-major) -1 */
 int findNearestFreeSlot(ParkingLot *p, int *out_r, int *out_c){
     for(int i=0;i<p->rows;i++){
         for(int j=0;j<p->cols;j++){
